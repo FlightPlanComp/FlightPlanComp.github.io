@@ -1,0 +1,100 @@
+
+<!-- This is the magic color that is the same color as the image background: rgb(0, 255, 100)-->
+
+<!--
+Beta test suggestions
+-->
+
+<!DOCTYPE html>  <!-- Debugged 01/18/19  fuzzy finder, command T -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Flight Plan Computation</title>
+    <link rel="stylesheet" href="normalize_copy.css">
+    <link rel="stylesheet" href="FPC.css">
+  </head>
+
+  <body>
+
+    <header class="clearfix">
+
+      <section class="page-top clearfix">
+
+        <section class="page-title">
+
+          <h1>Flight Plan Computation</h1> <!-- title -->
+
+        </section>
+
+        <section class="links">
+
+          <a href="About_FPC.html" target="_blank"> About FPC </a> <!-- links -->
+          <a href="Using_FPC.html" target="_blank"> Using FPC </a>
+
+        </section>
+
+      </section>
+
+    </header>
+
+    <main class="clearfix">
+
+      <section class="img-output-text clearfix"> <!-- image and the outputs positioned on the image -->
+
+          <img src="FPC_Visual4.png" alt="green triangle" class="image">
+
+          <span class="outputs" id="FOV">FOV</span> <!-- info outputs -->
+          <span class="outputs" id="height">Height</span>
+          <span class="outputs" id="horizontal-coverage">Coverage X</span>
+          <span class="outputs" id="vertical-coverage">Coverage Y</span>
+          <span class="outputs" id="horizontal-overlap">Overlap X</span>
+          <span class="outputs" id="vertical-overlap">Overlap Y</span>
+          <span class="outputs" id="horizontal-left">Excess X</span>
+          <span class="outputs" id="vertical-left">Excess Y</span>
+          <span id="not-to-scale">*not to scale</span>
+
+      </section>
+
+      <section class="variables-dock clearfix">
+
+        <h3>Variables</h3>  <!-- form with variable inputs -->
+
+        <section class="variables">
+
+          <form class="input-variables" action="index.html" method="post">
+
+            <input placeholder="FOV (degrees)"         class="input" id="FOV-input"          type="number" name="FOV"> <!-- FOV input -->
+            <input placeholder="Height"                class="input" id="height-input"       type="number" name="Height"> <!-- height input -->
+            <input placeholder="Overlap (%)"           class="input" id="overlap-input"      type="number" name="Overlap"> <!-- overlap input -->
+            <input placeholder="Aspect Ratio Height"   class="input" id="aspectRatioH-input" type="number" name="Aspect Ratio Height"> <!-- image size height input -->
+            <input placeholder="Aspect Ratio Width"    class="input" id="aspectRatioW-input" type="number" name="Aspect Ratio Width"> <!-- image size width input -->
+            <input placeholder="Units"                 class="input" id="units-input"        type="text"   name="Units"> <!-- units input -->
+            <button       onclick="compute()"          class="input" id="compute-button"     type="button" name="button">Compute</button> <!-- the compute button -->
+            <!--<input class="input" type="value" name="Top/bottom overlap" placeholder="Top/bottom overlap(%)"> -->
+
+          </form>
+
+        </section>
+
+      </section>
+
+    </main>
+
+    <footer>
+
+      <section class="page-footer">
+
+        <h5 class="copyright"> FPC &copy; 2018 </h5> <!-- copyright -->
+
+      </section>
+
+    </footer>
+
+<!-- This is where the magic happens -->
+
+    <script src="FPC.js"></script>
+
+  </body>
+
+</html>
+
