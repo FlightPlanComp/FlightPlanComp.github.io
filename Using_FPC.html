@@ -1,0 +1,84 @@
+
+<!DOCTYPE html> <!-- Debugged 01/18/2019 -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Using FPC</title>
+    <link rel="stylesheet" href="normalize_copy.css">
+    <link rel="stylesheet" href="FPC.css">
+    <style>
+      .page-title h1{
+        font-size: 30px;
+      }
+      .page-title{
+        float:left;
+        padding:5px;
+        padding-left: 1%;
+
+        background-color: white;
+        padding:5px;
+        box-shadow: 0px 3px 6px #333333;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="clearfix">
+      <section class="page-title">
+        <h1>Using <a href="index.html" target="_blank" class="tLink">Flight Plan Computation</a></h1>
+      </section>
+    </header>
+
+    <main>
+      <section>
+
+        <section class="usageSect">
+          <h3 class="usageHeader">General Usage</h3>
+          <ul class="usageList">
+            <li>The large rectangle represents the ground covered by an image taken at the given height.</li>
+            <li>The visual component is not to scale.</li>
+            <li>FPC was built to work alongside Letchi, an app that allows the user to create automated flight plans,
+              and Esri’s Drone2Map extension, which automatically stitches images that have been precisely positioned
+              relative to each other. FPC does not take in parameters and then map out a complete flight plan. It was
+              built with people in mind who are familiar with what is involved in making a map and want the degree of
+              flexibility that FPC offers.</li>
+              <li>FPC was not intended to be used on tiny screens. </li>
+              <li>Refresh the page to view the default labels</li>
+          </ul>
+        </section>
+
+        <section class="usageSect">
+          <h3 class="usageHeader">Inputs</h3>
+          <ul class="usageList">
+             <li>To use FPC, type the parameters into their respective text boxes in the variables section.
+              Press compute, and output values will be displayed on the visual. </li>
+              <li>Every input is entered as a unitless quantity.</li>
+             <li>Enter the FOV (field of view) of the camera (in degrees). If the FOV is 66 degrees, enter 66.</li>
+             <li>Enter the drone height, which is displayed live on most drone
+              compatible apps, and can be customized in a flight plan on the Letchi app.</li>
+             <li>Enter the overlap as a percentage. Don’t enter the percent symbol(%), the program knows that a
+               percentage is being inputted. Overlap parameters can be found in the software that you are using to stitch images.</li>
+             <li>Take the desired image aspect ratio (image height to width ratio), and enter the individual parts of the ratio into their respective boxes.</li>
+             <li>A unit is not required for the computation. You can even enter non-length units -- Joules(J),
+               femtoseconds(fs), apples(apples) -- if you are feeling adventurous. </li>
+          </ul>
+        </section>
+
+        <section class="usageSect">
+          <h3 class="usageHeader">Outputs</h3>
+          <ul class="usageList">
+              <li>The X and Y coverage represents the side lengths of the rectangle of ground covered by an
+              image taken at the inputted height.</li>
+              <li>The X and Y overlap represents the side-to-side/top-and-bottom overlap distance needed based on the inputted parameters.</li>
+              <li>The X and Y excess represents the difference between the side lengths of the coverage rectangle
+                and the respective side lengths of the overlap rectangle. This is the amount of the image that isn’t required
+                to overlap with a consecutive image. </li>
+          </ul>
+        </section>
+
+      </section>
+    </main>
+
+  </body>
+
+</html>

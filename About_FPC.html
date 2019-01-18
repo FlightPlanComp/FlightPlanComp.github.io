@@ -1,0 +1,73 @@
+
+<!DOCTYPE html> <!-- Debugged 01/18/2019 -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>About FPC</title>
+    <link rel="stylesheet" href="normalize_copy.css">
+    <link rel="stylesheet" href="FPC.css">
+    <style>
+      .page-title h1{
+        font-size: 30px;
+      }
+      .page-title{
+        float:left;
+        padding:5px;
+        padding-left: 1%;
+
+        background-color: white;
+        padding:5px;
+        box-shadow: 0px 3px 6px #333333;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="clearfix">
+      <section class="page-title">
+        <h1>About <a href="index.html" target="_blank" class="tLink">Flight Plan Computation</a> </h1>
+      </section>
+    </header>
+
+    <main>
+      <section class="para">
+        <p>
+
+          In my early years of high school, I had the opportunity to become involved in a school program that created analytic
+          maps by using drone technology to take overlapping images and software to automatically stitch them together.
+          After failed attempts to manually overlap the pictures during one project, it became apparent that there was
+          a gaping hole in the process of making a map. ArcGIS specialists are capable of stitching and overlapping pictures
+          “by hand” using specialized software, but anyone who isn’t an expert and doesn’t have access to this software has
+          to eyeball the overlap. There is software like Esri’s Drone2Map extension which automatically stitches images
+          together, and apps like Letchi that plan a flight path, but at the time when the need for this tool became
+          apparent to me, there was little to actually determine the <strong><em>necessary
+          relative positioning</em></strong> between images so that they may be stitched together. Eyeballed guessing becomes horribly
+          inefficient very quickly as the complexity of a map increases. Flight Plan Computation is an attempt to fill this
+          hole, and is the result of a series of unprecedented developments.
+        </p>
+
+        <p>
+          Frustrated by my failure on the previously mentioned project, I set out to discover or create a systematic and
+          easily repeatable method to solve this problem. I first realized that I could use simple trigonometry to
+          determine the exact positioning of images relative to each other needed to achieve the required overlap.
+          After working through this process, I realized that code could be written to do the computational component
+          of the process, so I wrote a computer program. At this point, I had a powerful tool. With the program doing
+          the math, I could work within the parameters quicky, and do in a matter of minutes what might have taken days.
+          However, there was an issue. It was somewhat ironic that I was the only one who had access to the tool, while also
+          being the only one that could work through the process without the assistance of the tool. I decided that
+          the next phase was to make my program widely accessible. I built a website, and implemented the code inside of
+          it in the way that made the most sense to me. My intention was to provide a solution to the problem that any
+          non-specialist faces when making a map. I am optimistic about the results.
+        </p>
+
+        <p>
+           To become familiar with using Flight Plan Computation, visit the
+           page about <a href="Using_FPC.html" target="_blank" class="tLink">Using FPC</a>.
+        </p>
+
+      </section>
+    </main>
+
+  </body>
+
+</html>

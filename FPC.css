@@ -1,0 +1,287 @@
+
+/* stylish comment */
+
+.clearfix:after {
+   visibility: hidden;
+   display: block;
+   font-size: 0;
+   content: " ";
+   clear: both;
+   height: 0;
+}
+
+.clearfix {
+ display: inline-block;
+}
+/* start commented  backslash hack \*/
+
+* html .clearfix {
+ height: 1%;
+}
+
+.clearfix {
+ display: block;
+}
+/* close commented backslash hack */
+
+/* non-clearfix stuff below*/
+
+* {
+  font-family: arial;
+}
+
+body {
+  background-color:rgb(0, 255, 100);
+  position: relative;
+}
+
+                        /* Below is the header styling */
+
+/*
+header{
+  background-color: white;
+  padding:5px;
+  box-shadow: 0px 3px 6px #333333;
+}
+*/
+
+.page-top{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+
+  background-color: white;
+  padding:5px;
+  box-shadow: 0px 3px 6px #333333;
+  width: 100%;
+}
+
+.page-title{
+  float:left;
+  padding:5px;
+  padding-left: 1%;
+
+/* This can't be the best way to do this, 370px centers it*/
+}
+
+.page-title h1{
+  color: black;
+  margin:0px;
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+
+}
+
+.links{
+  display: inline;
+  float: right;
+  padding:30px;
+}
+
+.links a{
+  padding:20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+                          /* Below is the main styling */
+
+.img-output-text{
+  top: 25%;
+  left: 2%;
+  z-index: 0;
+  width: 65%;
+  position: absolute;
+  margin-left: 90px;
+  margin-top: -2%;
+  margin-bottom: 2%;
+
+}
+
+.image{
+  width: 100%;
+
+}
+
+.outputs{
+  font-family: arial;
+  font-weight: bold;
+  color:#fff;
+  font-size: 20px;
+
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 2px;
+
+}
+
+#FOV{
+  position: absolute;
+  top: 10%;
+  left: 47%;
+}
+
+#height{
+  position: absolute;
+  top: 28%;
+  left: 46%;
+}
+
+#horizontal-coverage{
+  position: absolute;
+  top: 56%;
+  left: 44%;
+}
+
+#vertical-coverage{
+  position: absolute;
+  top: 75%;
+  left: 94%;
+}
+
+#horizontal-overlap{
+  position: absolute;
+  top: 69%;
+  left: 60%;
+}
+
+#vertical-overlap{
+  position: absolute;
+  top: 82%;
+  left: 16%;
+}
+
+#horizontal-left{
+  position: absolute;
+  top: 69%;
+  left: 5%;
+}
+
+#vertical-left{
+  position: absolute;
+  top: 62%;
+  left: 17%;
+}
+
+#not-to-scale{
+  position: absolute;
+  top: 95%;
+  left: 87%;
+  font-weight: bold;
+  width: 100px;
+  color: #000;
+}
+
+.variables-dock{
+  background-color: white;
+  float: right;
+  padding:10px;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin:20px;
+  width:15%;
+  margin-top: 8%;
+}
+
+.variables-dock h3{
+  margin:0px;
+  text-align: center;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.input-variables{
+  margin: 0px;
+  padding: 10px;
+  text-align: center;
+}
+
+.input{
+  margin: 6px auto;
+  padding: 6px;
+  font-family: arial;
+  font-weight: bold;
+  border: 1px solid #999;
+  border-radius: 5px;
+  width: 90%;
+
+}
+
+#compute-button{
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding:10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: #bbb;
+  font-family: arial;
+  font-weight: bold;
+}
+
+                      /* Below is the footer styling */
+
+.page-footer{
+  padding:5px;
+  background-color: #999;
+  width: 100%;
+
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+
+}
+
+.page-footer h5{
+  text-align: center;
+  margin:0px auto;
+  font-size: 20px;
+  color:black;
+}
+
+                /* Below is the 'about' page styling */
+
+.para{
+  margin: 30px;
+  padding:10px;
+  background-color: #fff;
+  border: solid 2px #000;
+  border-radius: 20px;
+}
+
+.para p{
+margin: 20px;
+  font-size: 20px;
+}
+
+.tLink{
+  text-decoration: none;
+}
+
+          /* Below is the 'usage' page styling */
+
+.usageSect{
+  padding: 10px;
+  margin: 25px;
+  background-color: #fff;
+  border: solid 2px #000;
+  border-radius: 20px;
+}
+
+.usageHeader{
+  text-decoration: underline;
+  font-size: 22px;
+  margin: 10px;
+}
+
+.usageList{
+  margin: 10px;
+}
+
+.usageList li{
+  font-size: 18px;
+  margin: 5px;
+}
